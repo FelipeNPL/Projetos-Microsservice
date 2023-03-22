@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Produto</title>
+</head>
+<body>
+
+	Tela de Produtos(view)
+
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Nome</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="produto : ${produtos}"> 
+				<td th:text="${produto.getId()}">
+				<td th:text="${produto.getNome()}">
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>
